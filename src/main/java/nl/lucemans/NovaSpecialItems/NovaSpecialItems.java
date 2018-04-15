@@ -29,6 +29,12 @@ public class NovaSpecialItems extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
+    @Override
+    public void onDisable() {
+        Bukkit.resetRecipes();
+        Bukkit.clearRecipes();
+    }
+
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void onBlockPlace(BlockPlaceEvent event) {
         if (event.isCancelled())
