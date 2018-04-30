@@ -3,3 +3,7 @@ main: nl.lucemans.NovaSpecialItems.NovaSpecialItems
 version: 1.0
 description: Description
 author: Lucemans
+commands:
+  nitem:
+    alias: [novaitems, novaitem]
+    description: Use /nitem to edit the item in your hand
